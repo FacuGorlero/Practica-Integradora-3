@@ -1,0 +1,24 @@
+error: undefined {"cause":"One or more properties were incomplete or not valid.\n        list of requires properties\n        - Product: product not found, recived [object Object]\n        - Product not added: can't add new product to database\n        - Product no deleted: not found a product to delete\n    ","code":3,"name":"Product creation error"}
+error: undefined {"cause":"One or more properties were incomplete or not valid.\n        list of requires properties\n        - Product: product not found, recived [object Object]\n        - Product not added: can't add new product to database\n        - Product no deleted: not found a product to delete\n    ","code":3,"name":"Product creation error"}
+error: This cart does not exist
+error: This cart does not exist
+error: undefined {"cause":"One or more properties were incomplete or not valid.\n        list of requires properties\n        - Product: product not found, recived [object Object]\n        - Product not added: can't add new product to database\n        - Product no deleted: not found a product to delete\n    ","code":3,"name":"Product creation error"}
+error: undefined {"cause":"One or more properties were incomplete or not valid.\n        list of requires properties\n        - Product: product not found, recived [object Object]\n        - Product not added: can't add new product to database\n        - Product no deleted: not found a product to delete\n    ","code":3,"name":"Product creation error"}
+error: undefined {"_message":"products validation failed","errors":{"category":{"kind":"required","message":"Path `category` is required.","name":"ValidatorError","path":"category","properties":{"message":"Path `category` is required.","path":"category","type":"required"}},"status":{"kind":"Boolean","message":"Cast to Boolean failed for value \"tittle\" (type string) at path \"status\" because of \"CastError\"","name":"CastError","path":"status","reason":{"kind":"boolean","message":"Cast to boolean failed for value \"tittle\" (type string) at path \"undefined\"","name":"CastError","stringValue":"\"tittle\"","value":"tittle","valueType":"string"},"stringValue":"\"tittle\"","value":"tittle","valueType":"string"}}}
+error: undefined {"kind":"ObjectId","path":"_id","reason":{},"stringValue":"\"styles.css\"","value":"styles.css","valueType":"string"}
+error: undefined {"kind":"ObjectId","path":"_id","reason":{},"stringValue":"\"styles.css\"","value":"styles.css","valueType":"string"}
+error: undefined {"kind":"ObjectId","path":"_id","reason":{},"stringValue":"\"styles.css\"","value":"styles.css","valueType":"string"}
+error: undefined {"kind":"ObjectId","path":"_id","reason":{},"stringValue":"\"styles.css\"","value":"styles.css","valueType":"string"}
+error: undefined {"kind":"ObjectId","path":"_id","reason":{},"stringValue":"\"styles.css\"","value":"styles.css","valueType":"string"}
+error: undefined {"kind":"ObjectId","path":"_id","reason":{},"stringValue":"\":65ee47a4206ec25b22567394\"","value":":65ee47a4206ec25b22567394","valueType":"string"}
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined
+error: undefined {"view":{"defaultEngine":"hbs","ext":".hbs","name":"error","root":"C:\\Users\\Usuario\\Desktop\\Tercera práctica integradora\\src/views"}}
+error: undefined

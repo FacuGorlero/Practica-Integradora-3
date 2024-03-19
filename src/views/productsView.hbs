@@ -1,0 +1,63 @@
+<main>
+    <header>
+        <h3 class="text-center">List of Products</h3>
+    </header>
+    {{#if user}}
+        {{#eq user.role 'admin'}}
+            <div class="welcome">
+                <p>Welcome Admin, enjoy shopping!</p>
+            </div>
+        {{else}}
+            <div class="welcome">
+                <p>Welcome {{user.first_name}} {{user.last_name}} , enjoy shopping!</p>
+            </div>
+        {{/eq}}
+    {{/if}}
+    <div class="swiper-filter">
+        <h4>FILTROS:</h4>
+        <div class="groupFilter">
+          <p class="titleFilter">CATEGEGORIAS</p>
+          <div>
+            <a href="/products?category=all">Todas</a>
+            {{#each category}}<a href="/products?category={{this}}">{{this}}</a>{{/each}}
+          </div>
+        </div>
+        <div class="groupFilter">
+          <p class="titleFilter">ORDEN:</p>
+          <div>
+            {{!-- <a href={{disorderly}}>Sin orden</a>                                  fijarse porque no anda  --}}
+            <a href={{ascend}}>Ascendente</a>
+            <a href={{descend}}>Descendete</a>
+          </div>
+        </div>
+        <div class="groupFilter">
+          <p class="titleFilter">STOCK:</p>
+          <div>
+            <a href={{availability}}>Todos</a>
+            <a href={{unavailability}}>Con Stock</a>
+          </div>
+        </div>
+      </div>
+      
+    <div class="items-product">
+        <ul>
+            {{#each docs}}
+                <li>{{this.thumbnail}}</li>
+                <li>Title: {{this.title}}</li>
+                <li>Category: {{this.category}}</li>
+                 <li>Price: {{this.price}}</li>
+                <a href="/products/details/{{this._id}}" class="btn btn-dark" style="margin: 5px">Details</a>
+                <hr>
+            {{/each}}
+        </ul>
+    </div>
+    <div class="text-center" style="margin-top: 20px">
+        {{#if hasPrevPage}}
+            <a href="/products?pageNumber={{prevPage}}" class="btn btn-dark" style="margin-right: 10px">Prev</a>
+        {{/if}}
+        <span class="page-number" style="margin-right: 10px">{{page}}</span>
+        {{#if hasNextPage}}
+            <a href="/products?pageNumber={{nextPage}}" class="btn btn-dark">Next</a>
+        {{/if}}
+    </div>
+</main>
